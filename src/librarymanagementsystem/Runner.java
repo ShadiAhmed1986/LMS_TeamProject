@@ -2,5 +2,11 @@ package librarymanagementsystem;
 
 public class Runner {
 
-	//Runner class
+	public static void main(String[] args) {
+		Search obj=new Search();
+		obj.chooseAnOption();
+		//obj.searchBook();
+       //obj.searchByAuthor();
+       // obj.searchByGenres();
+	}
 }
