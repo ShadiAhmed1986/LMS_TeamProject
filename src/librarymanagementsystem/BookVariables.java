@@ -6,6 +6,7 @@ public class BookVariables {
 	private String BookName;
 	private String AuthorName;
 	private String Genres;
+	
 	public String getSNN() {
 		return SNN;
 	}

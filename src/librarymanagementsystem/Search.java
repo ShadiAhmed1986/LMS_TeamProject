@@ -10,8 +10,6 @@ public class Search extends BookVariables{
 
 	 Scanner scan=new Scanner(System.in);
 	
-	//Method to add a book to the basket
-
 	//Method to start searching by choosing option
   	public void chooseAnOption() {
   	System.out.println("======= Please choose a way to search =======");
@@ -93,7 +91,7 @@ public class Search extends BookVariables{
 	
 	
 	public  void searchByAuthor() {
-	//As a user , I should be able to search a book by author name, book name, by genre.
+	//As a user , I should be able to search a book by author name
 	
 	HashMap<String, String> bookDatabase = new HashMap<>();
 	List<String>list=new ArrayList<>();
@@ -139,7 +137,7 @@ public class Search extends BookVariables{
 		}
 	
 	public void searchByGenres() {
-	//As a user , I should be able to search a book by author name, book name, by genre.					 ​
+	//As a user , I should be able to search a book by genre.					 ​
 	HashMap<String, String> bookDatabase = new HashMap<>();
 	List<String>list=new ArrayList<>();
 					
@@ -268,5 +266,4 @@ public class Search extends BookVariables{
 		System.out.println(basket);
 
 	}
-	
 }
