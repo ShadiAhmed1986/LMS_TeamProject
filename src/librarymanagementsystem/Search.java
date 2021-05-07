@@ -255,17 +255,18 @@ public class Search extends BookVariables{
         
         
         System.out.println("== Do you want to add more book from recent reaserch?(yes/no) ==");
+        
         String again=scan.next();
+        
         if(again.equalsIgnoreCase("yes") && basket.size()< 5) {           
             selectAndAddBasket(hp);
+        }else if(again.equalsIgnoreCase("no")) {
+        	System.out.println("The books in your basket: " + basket);
         }
         if(basket.size() > 5) {
         	System.out.println("You cannot get more than 5 books! Thank you for your visit!");
             selectOption();
         }
-        if(again.equalsIgnoreCase("no")) {
-        	System.out.println("The books in your basket: " + basket);
-        }
-        //System.out.println("The books in your basket: " + basket);
+       
     }
 }
